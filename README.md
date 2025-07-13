@@ -1,24 +1,31 @@
 
-```markdown
-# Recognizing Movement from Video Segments
+#  Recognizing Movement from Video Segments
 
-## Project Overview
-This project teaches a computer to watch short video clips and recognize simple movements. It splits videos into frames, uses a YOLOv8 model to detect people, and then labels each person’s action—like running, waving, or clapping. In the end, you get a system that reads video and tells you what actions happen, frame by frame.
+##  Overview
+This project aims to recognize human actions from short video segments using computer vision techniques. By splitting videos into individual frames and applying the YOLOv8 object detection model, we identify and classify specific human activities. The system ultimately produces labeled actions per frame.
 
-## Recognized Actions
-This model is trained to identify 3 core human activities:
+---
 
-- Boxing
-- Hand waving
-- Hand clapping
+##  Recognized Actions
+The trained YOLOv8 model can detect the following movements:
+- 🥊 Boxing  
+- 👋 Hand Waving  
+- 👏 Hand Clapping
 
-## Dataset
-- **YOLO Dataset.zip**: Contains video frames and YOLO-format annotation files (`.txt` bounding boxes with activity labels).
-  - `dataset/images/train/` and `dataset/images/val/` for frames
-  - `dataset/labels/train/` and `dataset/labels/val/` for labels
-- The dataset is split into 80% training and 20% validation sets.
+---
 
-````
+## 📁 Dataset Structure
+
+The dataset follows the YOLO format and includes:
+
+YOLO Dataset.zip
+├── dataset/
+│ ├── images/
+│ │ ├── train/
+│ │ └── val/
+│ └── labels/
+│ ├── train/
+│ └── val/
 
 ## Installation
 1. Clone the repository:
